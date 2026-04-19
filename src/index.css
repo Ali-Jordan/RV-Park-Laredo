@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Desert Sunset Color Palette */
+    --warm-sand: 36 52% 91%;
+    --soft-orange: 24 65% 55%;
+    --burnt-orange: 18 59% 40%;
+    --deep-brown: 15 45% 25%;
+    --cream: 36 45% 95%;
+    
+    /* shadcn/ui variables - adapted for desert theme */
+    --background: 36 52% 91%;
+    --foreground: 15 45% 20%;
+    --card: 36 45% 95%;
+    --card-foreground: 15 45% 20%;
+    --popover: 36 45% 95%;
+    --popover-foreground: 15 45% 20%;
+    --primary: 18 59% 40%;
+    --primary-foreground: 36 52% 95%;
+    --secondary: 24 65% 55%;
+    --secondary-foreground: 15 45% 20%;
+    --muted: 36 30% 88%;
+    --muted-foreground: 15 30% 40%;
+    --accent: 24 65% 55%;
+    --accent-foreground: 15 45% 20%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 36 30% 80%;
+    --input: 36 30% 85%;
+    --ring: 18 59% 40%;
+    --radius: 0.625rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  /* Desert Sunset Gradient Backgrounds */
+  
+  /* Primary vertical gradient - full desert sunset */
+  .bg-desert-sunset {
+    background: linear-gradient(
+      180deg,
+      #F5E9DA 0%,
+      #F5E9DA 15%,
+      #F0D5C0 35%,
+      #E8C4A8 50%,
+      #D97A3A 75%,
+      #A14E2C 100%
+    );
+  }
+  
+  /* Hero radial gradient with warm glow */
+  .bg-desert-hero {
+    background: 
+      radial-gradient(
+        ellipse 80% 60% at 50% 40%,
+        rgba(217, 122, 58, 0.15) 0%,
+        transparent 60%
+      ),
+      linear-gradient(
+        180deg,
+        #F5E9DA 0%,
+        #F5E9DA 20%,
+        #F0D5C0 45%,
+        #E8C4A8 65%,
+        #D97A3A 85%,
+        #A14E2C 100%
+      );
+  }
+  
+  /* Lighter gradient for content sections */
+  .bg-desert-light {
+    background: linear-gradient(
+      180deg,
+      #FAF5EE 0%,
+      #F5E9DA 30%,
+      #F0D5C0 70%,
+      #E8C4A8 100%
+    );
+  }
+  
+  /* Alternate section - subtle tint shift */
+  .bg-desert-alt {
+    background: linear-gradient(
+      180deg,
+      #F8F0E5 0%,
+      #F2E2D0 50%,
+      #EBD0B8 100%
+    );
+  }
+  
+  /* Footer - darker burnt orange */
+  .bg-desert-footer {
+    background: linear-gradient(
+      180deg,
+      #A14E2C 0%,
+      #8B4224 50%,
+      #6B351C 100%
+    );
+  }
+  
+  /* Subtle organic shapes overlay */
+  .desert-shapes {
+    position: relative;
+  }
+  
+  .desert-shapes::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.06;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23A14E2C' fill-opacity='1' d='M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    z-index: 0;
+  }
+  
+  /* Text contrast utilities */
+  .text-on-light {
+    @apply text-[#4A3728];
+  }
+  
+  .text-on-dark {
+    @apply text-[#F5E9DA];
+  }
+  
+  /* Section spacing */
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+  
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8 xl:px-12;
+  }
+}
+
+@layer utilities {
+  /* Smooth gradient transitions */
+  .gradient-transition {
+    position: relative;
+  }
+  
+  .gradient-transition::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, inherit);
+    pointer-events: none;
+  }
+  
+  /* Glass effect for cards on gradient */
+  .glass-on-gradient {
+    background: rgba(245, 233, 218, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Warm shadow */
+  .shadow-warm {
+    box-shadow: 
+      0 4px 6px -1px rgba(161, 78, 44, 0.1),
+      0 2px 4px -2px rgba(161, 78, 44, 0.1);
+  }
+  
+  .shadow-warm-lg {
+    box-shadow: 
+      0 10px 15px -3px rgba(161, 78, 44, 0.15),
+      0 4px 6px -4px rgba(161, 78, 44, 0.15);
+  }
+}
