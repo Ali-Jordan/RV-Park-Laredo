@@ -20,14 +20,14 @@ export function Footer() {
         }}
       />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-10 pt-12 sm:pt-14 pb-8 sm:pb-10">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 pt-10 sm:pt-14 pb-6 sm:pb-10">
 
         {/* Sideview brand — constrained on mobile */}
         <div className="mb-5 sm:mb-6 pb-5 sm:pb-6" style={{ borderBottom: '1px solid rgba(245,233,218,0.07)' }}>
           <img
             src="/sideview.png"
             alt="Vaquero Village RV Park"
-            style={{ height: '156px', maxWidth: '520px', objectFit: 'contain', objectPosition: 'left' }}
+            style={{ height: 'clamp(80px, 15vw, 156px)', maxWidth: '520px', objectFit: 'contain', objectPosition: 'left' }}
           />
           <p className="mt-1.5 text-xs tracking-widest uppercase" style={{ color: 'rgba(245,233,218,0.55)' }}>
             Village R.V. Park &nbsp;·&nbsp; Laredo, TX
@@ -52,8 +52,8 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3" style={{ color: 'rgba(245,233,218,0.55)' }}>
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <a href="tel:+19569996862" className="text-sm transition-colors hover:text-white"
-                  style={{ color: 'rgba(245,233,218,0.55)' }}>(956) 999-6862</a>
+                <a href="tel:+19567637771" className="text-sm transition-colors hover:text-white"
+                  style={{ color: 'rgba(245,233,218,0.55)' }}>(956) 763-7771</a>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ export function Footer() {
         </div>
 
         <div className="pt-6 sm:pt-8" style={{ borderTop: '1px solid rgba(245,233,218,0.07)' }}>
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
+          <div className="flex flex-col gap-2 sm:flex-row sm:justify-between sm:items-center sm:gap-4 text-center sm:text-left">
             <p className="text-xs" style={{ color: 'rgba(245,233,218,0.25)' }}>
               &copy; {new Date().getFullYear()} Vaquero Village RV Park. All rights reserved.
             </p>

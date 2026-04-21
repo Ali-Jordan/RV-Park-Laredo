@@ -14,11 +14,11 @@ export function Hero() {
         </a>
         {/* Mobile: icon + short number. Desktop: full pill */}
         <a
-          href="tel:+19569996862"
+          href="tel:+19567637771"
           className="inline-flex items-center gap-1.5 sm:gap-2 bg-desert-burnt hover:bg-desert-brown text-desert-sand rounded-full font-bold transition-all duration-200 hover:-translate-y-0.5 shadow-warm-lg px-3 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm"
         >
           <Phone className="w-4 h-4" />
-          <span className="hidden xs:inline sm:inline">(956) 999-6862</span>
+          <span className="hidden xs:inline sm:inline">(956) 763-7771</span>
           <span className="xs:hidden sm:hidden">Call</span>
         </a>
       </nav>
@@ -46,9 +46,9 @@ export function Hero() {
                 Full Hookups Available
               </h1>
 
-              <a href="tel:+19569996862" className="inline-flex items-center gap-2 text-desert-burnt font-bold text-lg sm:text-xl mb-5 sm:mb-6 hover:text-desert-brown transition-colors">
+              <a href="tel:+19567637771" className="inline-flex items-center gap-2 text-desert-burnt font-bold text-lg sm:text-xl mb-5 sm:mb-6 hover:text-desert-brown transition-colors">
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                (956) 999-6862
+                (956) 763-7771
               </a>
 
               <p className="text-base sm:text-lg text-desert-dark/70 mb-6 sm:mb-8 leading-relaxed max-w-lg">
@@ -72,7 +72,7 @@ export function Hero() {
 
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-7 sm:mb-10">
-                <a href="tel:+19569996862" className="inline-flex items-center justify-center gap-2 bg-desert-burnt hover:bg-desert-brown text-desert-sand px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base sm:text-lg shadow-warm-lg transition-all duration-300 hover:-translate-y-0.5">
+                <a href="tel:+19567637771" className="inline-flex items-center justify-center gap-2 bg-desert-burnt hover:bg-desert-brown text-desert-sand px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base sm:text-lg shadow-warm-lg transition-all duration-300 hover:-translate-y-0.5">
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                   Call Now
                 </a>
@@ -98,7 +98,7 @@ export function Hero() {
             </div>
 
             {/* Right — Pricing card: full width on mobile, right-aligned on desktop */}
-            <div className="lg:flex lg:justify-end">
+            <div className="flex justify-center lg:justify-end">
               <div className="bg-desert-cream/90 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-warm-lg border border-white/60 w-full lg:max-w-sm">
 
                 <div className="flex items-center gap-3 mb-4 sm:mb-6 pb-4 sm:pb-6 border-b border-desert-burnt/10">
@@ -131,11 +131,11 @@ export function Hero() {
                   $100 refundable deposit required.
                 </div>
 
-                <a href="tel:+19569996862"
+                <a href="tel:+19567637771"
                   className="mt-3 sm:mt-4 flex items-center justify-center gap-2 w-full text-desert-sand py-3 sm:py-3.5 rounded-xl sm:rounded-2xl font-bold text-sm transition-all duration-200 hover:-translate-y-0.5"
                   style={{ background: '#A14E2C' }}>
                   <Phone className="w-4 h-4" />
-                  (956) 999-6862
+                  (956) 763-7771
                 </a>
               </div>
             </div>

@@ -18,15 +18,15 @@ const policies = [
 
 export function About() {
   return (
-    <section id="reserve" className="relative overflow-hidden" style={{ background: '#FDF6EE', paddingTop: '5rem', paddingBottom: '4rem' }}>
+    <section id="reserve" className="relative overflow-hidden" style={{ background: '#FDF6EE', paddingTop: 'clamp(3rem, 6vw, 5rem)', paddingBottom: 'clamp(2.5rem, 5vw, 4rem)' }}>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-10">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
 
           {/* Left */}
           <div className="flex flex-col">
             <p className="font-medium tracking-widest uppercase text-xs sm:text-sm mb-3 text-desert-burnt">About The Park</p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-desert-dark mb-4 sm:mb-5 leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-desert-dark mb-3 sm:mb-5 leading-tight">
               Trusted RV Parking
               <span className="text-desert-burnt"> Near I-35</span>
             </h2>
@@ -84,11 +84,11 @@ export function About() {
                 <div className="font-bold text-desert-dark text-sm">Ready to roll in?</div>
                 <div className="text-xs text-desert-dark/55 mt-0.5">Call us — we'll get you set up same day.</div>
               </div>
-              <a href="tel:+19569996862"
+              <a href="tel:+19567637771"
                 className="flex-shrink-0 inline-flex items-center gap-1.5 px-4 sm:px-5 py-2.5 rounded-full font-bold text-xs sm:text-sm transition-all hover:-translate-y-0.5"
                 style={{ background: '#A14E2C', color: '#F5E9DA' }}>
                 <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                <span className="hidden sm:inline">(956) 999-6862</span>
+                <span className="hidden sm:inline">(956) 763-7771</span>
                 <span className="sm:hidden">Call Now</span>
               </a>
             </div>
@@ -96,7 +96,7 @@ export function About() {
 
           {/* Right — Reserve form: NOT sticky on mobile */}
           <div>
-            <div className="rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:sticky lg:top-8"
+            <div className="rounded-2xl sm:rounded-3xl p-5 sm:p-8"
               style={{ background: '#FFFFFF', border: '1px solid rgba(161,78,44,0.1)', boxShadow: '0 8px 40px rgba(161,78,44,0.08)' }}>
               <h3 className="text-xl sm:text-2xl font-bold text-desert-dark mb-1">Reserve Your Spot</h3>
               <p className="text-desert-dark/50 text-xs sm:text-sm mb-5">Send your info and we'll call to confirm availability.</p>
@@ -140,7 +140,7 @@ export function About() {
                   </select>
                 </div>
 
-                <a href="tel:+19569996862"
+                <a href="tel:+19567637771"
                   className="w-full inline-flex items-center justify-center gap-3 py-3.5 sm:py-4 rounded-xl font-bold text-base transition-all duration-300 hover:-translate-y-0.5"
                   style={{ background: '#A14E2C', color: '#F5E9DA' }}>
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5" />

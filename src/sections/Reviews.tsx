@@ -23,9 +23,9 @@ const reviews = [
 
 export function Reviews() {
   return (
-    <section className="relative overflow-hidden" style={{ background: '#7A2E0E', paddingTop: '5rem', paddingBottom: '5rem' }}>
+    <section className="relative overflow-hidden" style={{ background: '#7A2E0E', paddingTop: 'clamp(3rem, 6vw, 5rem)', paddingBottom: 'clamp(3rem, 6vw, 5rem)' }}>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-5 sm:px-10">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         <div className="text-center mb-10 sm:mb-12">
           <p className="font-medium tracking-widest uppercase text-xs sm:text-sm mb-3" style={{ color: 'rgba(245,233,218,0.55)' }}>Guest Reviews</p>
@@ -41,7 +41,7 @@ export function Reviews() {
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-3 gap-4 sm:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {reviews.map(({ name, tag, stars, text }) => (
             <div key={name} className="rounded-2xl p-5 sm:p-7 flex flex-col"
               style={{ background: 'rgba(245,233,218,0.1)', border: '1px solid rgba(245,233,218,0.18)' }}>
