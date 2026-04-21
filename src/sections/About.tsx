@@ -189,6 +189,30 @@ export function About() {
                     </select>
                   </div>
 
+                  <div>
+                    <label className="block text-xs font-semibold uppercase tracking-wider mb-1.5" style={{ color: 'rgba(60,30,10,0.45)' }}>RV Size</label>
+                    <select name="rv_size"
+                      className="w-full px-4 py-3 rounded-xl text-sm focus:outline-none"
+                      style={{ background: '#FDF6EE', border: '1px solid rgba(161,78,44,0.18)', color: '#3C1E0A', fontFamily: 'inherit' }}>
+                      <option value="">Select RV size</option>
+                      <option>Small (under 25 ft)</option>
+                      <option>Medium (25–35 ft)</option>
+                      <option>Large (35–45 ft)</option>
+                      <option>Extra Large (45 ft+)</option>
+                      <option>Fifth Wheel</option>
+                      <option>Travel Trailer</option>
+                      <option>Motorhome Class A</option>
+                      <option>Motorhome Class B / C</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-semibold uppercase tracking-wider mb-1.5" style={{ color: 'rgba(60,30,10,0.45)' }}>Additional Notes</label>
+                    <textarea name="notes" rows={3} placeholder="Anything else we should know — number of people, pets, special requests..."
+                      className="w-full px-4 py-3 rounded-xl text-sm focus:outline-none"
+                      style={{ background: '#FDF6EE', border: '1px solid rgba(161,78,44,0.18)', color: '#3C1E0A', fontFamily: 'inherit', resize: 'vertical' }} />
+                  </div>
+
                   <button
                     type="submit"
                     disabled={status === 'sending'}
