@@ -60,7 +60,8 @@ export function Hero() {
               <div className="flex flex-nowrap sm:flex-wrap gap-2 sm:gap-3 mb-7 sm:mb-10 overflow-x-auto pb-1 sm:pb-0 -mx-1 px-1">
                 {[
                   { icon: Droplets, label: 'Water Included' },
-                  { icon: Zap,      label: 'Electric 30/50A' },
+                  { icon: Zap,      label: '30/50 Amps Available' },
+                  { icon: Droplets, label: 'Sewage Included' },
                   { icon: Wifi,     label: 'Internet Available' },
                 ].map(({ icon: Icon, label }) => (
                   <div key={label} className="flex-shrink-0 flex items-center gap-1.5 sm:gap-2 bg-white/60 border border-desert-burnt/15 rounded-full px-3 py-1.5 sm:px-4 sm:py-2">
