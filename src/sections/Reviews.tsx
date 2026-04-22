@@ -41,7 +41,7 @@ export function Reviews() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-4">
           {reviews.map(({ name, tag, stars, text }) => (
             <div key={name} className="rounded-2xl p-5 sm:p-7 flex flex-col"
               style={{ background: 'rgba(245,233,218,0.1)', border: '1px solid rgba(245,233,218,0.18)' }}>

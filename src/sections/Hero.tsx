@@ -5,7 +5,7 @@ export function Hero() {
     <>
       {/* Nav — mobile: icon only + compact call button */}
       <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 sm:px-10 py-1.5 bg-desert-hero/90 backdrop-blur-md border-b border-desert-burnt/10">
-        <a href="/" className="flex items-center gap-2 sm:gap-3">
+        <a href="/" className="flex-wrap flex items-center gap-2 sm:gap-3">
           <img src="/logo.png" alt="Vaquero Village RV Park" className="h-12 w-12 sm:h-16 sm:w-16 object-contain" />
           <div className="hidden sm:block">
             <div className="text-sm font-bold text-desert-dark leading-tight">Vaquero Village</div>
@@ -57,14 +57,14 @@ export function Hero() {
               </p>
 
               {/* Trust badges — scroll on mobile */}
-              <div className="flex flex-nowrap sm:flex-wrap gap-2 sm:gap-3 mb-7 sm:mb-10 overflow-x-auto pb-1 sm:pb-0 -mx-1 px-1">
+              <div className="flex-wrap flex flex-nowrap sm:flex-wrap gap-2 sm:gap-3 mb-7 sm:mb-10 overflow-x-auto pb-1 sm:pb-0 -mx-1 px-1">
                 {[
                   { icon: Droplets, label: 'Water Included' },
                   { icon: Zap,      label: '30/50 Amps Available' },
                   { icon: Droplets, label: 'Sewage Included' },
                   { icon: Wifi,     label: 'Internet Available' },
                 ].map(({ icon: Icon, label }) => (
-                  <div key={label} className="flex-shrink-0 flex items-center gap-1.5 sm:gap-2 bg-white/60 border border-desert-burnt/15 rounded-full px-3 py-1.5 sm:px-4 sm:py-2">
+                  <div key={label} className="flex-wrap flex-shrink-0 flex items-center gap-1.5 sm:gap-2 bg-white/60 border border-desert-burnt/15 rounded-full px-3 py-1.5 sm:px-4 sm:py-2">
                     <Icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-desert-burnt" />
                     <span className="text-xs sm:text-sm font-medium text-desert-dark whitespace-nowrap">{label}</span>
                   </div>
@@ -72,7 +72,7 @@ export function Hero() {
               </div>
 
               {/* CTAs */}
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-7 sm:mb-10">
+              <div className="flex-wrap flex flex-col sm:flex-row gap-3 sm:gap-4 mb-7 sm:mb-10">
                 <a href="tel:+19567637771" className="inline-flex items-center justify-center gap-2 bg-desert-burnt hover:bg-desert-brown text-desert-sand px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base sm:text-lg shadow-warm-lg transition-all duration-300 hover:-translate-y-0.5">
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
                   Call Now
@@ -84,7 +84,7 @@ export function Hero() {
               </div>
 
               {/* Social links */}
-              <div className="flex flex-wrap gap-4 sm:gap-5 text-xs sm:text-sm">
+              <div className="flex-wrap flex flex-wrap gap-4 sm:gap-5 text-xs sm:text-sm">
                 <a href="https://share.google/MI9CRqTyQ80b8gyln" target="_blank" rel="noopener noreferrer"
                   className="transition-opacity hover:opacity-70"
                   style={{ color: 'rgba(245,233,218,0.75)', textDecoration: 'underline', textUnderlineOffset: '3px' }}>
@@ -102,7 +102,7 @@ export function Hero() {
             <div className="flex justify-center lg:justify-end">
               <div className="bg-desert-cream/90 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-warm-lg border border-white/60 w-full lg:max-w-sm">
 
-                <div className="flex items-center gap-3 mb-4 sm:mb-6 pb-4 sm:pb-6 border-b border-desert-burnt/10">
+                <div className="flex-wrap flex items-center gap-3 mb-4 sm:mb-6 pb-4 sm:pb-6 border-b border-desert-burnt/10">
                   <img src="/logo.png" alt="Vaquero Village" className="h-11 w-11 sm:h-14 sm:w-14 object-contain" />
                   <div>
                     <div className="font-bold text-desert-dark text-sm sm:text-base leading-tight">Vaquero Village</div>

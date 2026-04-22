@@ -46,7 +46,7 @@ export function Features() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-5 mb-10 sm:mb-16">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-5 mb-10 sm:mb-16">
           {amenities.map(({ icon: Icon, title, desc }) => (
             <div key={title} className="group rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1"
               style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(245,233,218,0.07)' }}>
@@ -65,7 +65,7 @@ export function Features() {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold" style={{ color: '#F5E9DA' }}>Built for People on the Move</h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-3">
           {whoFor.map(({ icon: Icon, label, desc }) => (
             <div key={label} className="flex items-center gap-4 sm:gap-5 rounded-2xl px-4 sm:px-6 py-4 sm:py-5"
               style={{ background: 'rgba(196,98,42,0.1)', border: '1px solid rgba(196,98,42,0.2)' }}>

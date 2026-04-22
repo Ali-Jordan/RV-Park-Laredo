@@ -46,7 +46,7 @@ export function About() {
   return (
     <section id="reserve" className="relative overflow-hidden" style={{ background: '#FDF6EE', paddingTop: 'clamp(3rem, 6vw, 5rem)', paddingBottom: 'clamp(2.5rem, 5vw, 4rem)' }}>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div className="mx-auto w-full relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
 
           {/* ── LEFT ── */}

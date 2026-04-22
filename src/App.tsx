@@ -6,7 +6,7 @@ import { Footer } from './sections/Footer';
 
 function App() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen overflow-x-hidden w-full">
       <Hero />
       <Features />
       <Reviews />

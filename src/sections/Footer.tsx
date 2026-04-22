@@ -15,7 +15,7 @@ export function Footer() {
           width: 'auto',
           objectFit: 'contain',
           objectPosition: 'bottom right',
-          transform: 'translateX(10%) translateY(10%)',
+          transform: 'translateX(15%) translateY(10%)',
           opacity: 0.22,
         }}
       />
@@ -27,7 +27,7 @@ export function Footer() {
           <img
             src="/sideview.png"
             alt="Vaquero Village RV Park"
-            style={{ height: 'clamp(80px, 15vw, 156px)', maxWidth: '520px', objectFit: 'contain', objectPosition: 'left' }}
+            style={{ height: 'clamp(80px, 15vw, 156px)', maxWidth: '100%', objectFit: 'contain', objectPosition: 'left' }}
           />
           <p className="mt-1.5 text-xs tracking-widest uppercase" style={{ color: 'rgba(245,233,218,0.55)' }}>
             Village R.V. Park &nbsp;·&nbsp; Laredo, TX
@@ -37,7 +37,7 @@ export function Footer() {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12 mb-8 sm:mb-10">
 
           <div>
-            <p className="text-sm leading-relaxed" style={{ color: 'rgba(245,233,218,0.5)', maxWidth: '240px' }}>
+            <p className="text-sm leading-relaxed" style={{ color: 'rgba(245,233,218,0.5)', maxWidth: '100%' }}>
               Full hookup RV parking on Hwy 83 North near I-35.
               Daily, weekly, and monthly rates available.
             </p>
