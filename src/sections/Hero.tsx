@@ -1,5 +1,15 @@
 import { Phone, MapPin, ArrowRight, Wifi, Droplets, Zap } from 'lucide-react';
 
+
+const MarioPipe = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    {/* Wide cap at top */}
+    <rect x="2" y="4" width="20" height="5" rx="1.5" />
+    {/* Narrow pipe body */}
+    <rect x="7" y="9" width="10" height="11" rx="1" />
+  </svg>
+);
+
 export function Hero() {
   return (
     <>
@@ -57,11 +67,11 @@ export function Hero() {
               </p>
 
               {/* Trust badges — scroll on mobile */}
-              <div className="flex flex-nowrap sm:flex-wrap gap-2 sm:gap-3 mb-7 sm:mb-10 overflow-x-auto pb-1 sm:pb-0">
+              <div className="flex flex-wrap gap-2 sm:gap-3 mb-7 sm:mb-10">
                 {[
                   { icon: Droplets, label: 'Water Included' },
                   { icon: Zap,      label: '30/50 Amps Available' },
-                  { icon: Droplets, label: 'Sewage Included' },
+                  { icon: MarioPipe, label: 'Sewage Included' },
                   { icon: Wifi,     label: 'Internet Available' },
                 ].map(({ icon: Icon, label }) => (
                   <div key={label} className="flex-shrink-0 flex items-center gap-1.5 sm:gap-2 bg-white/60 border border-desert-burnt/15 rounded-full px-3 py-1.5 sm:px-4 sm:py-2">
