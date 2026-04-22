@@ -203,9 +203,8 @@ html, body {
   box-sizing: border-box;
 }
 
-/* Decorative / absolute images must never cause horizontal scroll */
+/* Decorative absolute images: clipped by their parent overflow-hidden */
 img[aria-hidden="true"] {
-  max-width: none; /* let them use % or px as coded */
   pointer-events: none;
 }
 
